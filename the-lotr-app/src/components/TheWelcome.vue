@@ -20,7 +20,7 @@
 
     <h2>Features</h2>
     <ul>
-      <li><strong>Comprehensive Database</strong>: Powered by <a href="https://the-one-api.dev/" target="_blank">The Lord of the Rings API</a>, our app fetches real-time data
+      <li><strong>Comprehensive Database</strong>: Powered by<a href="https://the-one-api.dev/" target="_blank">The Lord of the Rings API</a>, our app fetches real-time data
         to bring you up-to-date and accurate information about the beloved franchise.</li>
       <li><strong>User-Friendly Interface</strong>: Built using HTML and CSS for a seamless and visually appealing
         experience.</li>
