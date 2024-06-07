@@ -12,7 +12,7 @@
         </nav>
       </div>
     </header>
-    <div class="content">
+    <div>
       <RouterView />
     </div>
   </div>

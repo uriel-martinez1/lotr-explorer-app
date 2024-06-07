@@ -69,6 +69,11 @@ export default {
 .quote-content {
     background-color: rgba(0, 0, 0, 0.25);
     border-radius: 5px;
+    max-width: 800px;
+    padding: 20px;
+    border-radius: 8px;
+    max-height: 80vh;
+    overflow-y: auto;
 }
 
 .quote-container {
