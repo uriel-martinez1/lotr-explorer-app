@@ -6,7 +6,6 @@
       <div class="wrapper">
         <nav>
           <RouterLink to="/">Home</RouterLink>
-          <!-- <RouterLink to="/about">About</RouterLink> -->
           <router-link :to="{ name: 'quote' }">Quotes</router-link>
           <router-link :to="{ name: 'movie' }">Movies</router-link>
           <router-link :to="{ name: 'character' }">Characters</router-link>
@@ -76,7 +75,7 @@ nav a:first-of-type {
     display: flex;
     place-items: center;
     padding-right: calc(var(--section-gap) / 2);
-    margin: 10px 0px 10px;
+    margin: 20px 0px 20px;
   }
 
   .logo {
