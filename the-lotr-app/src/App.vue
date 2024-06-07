@@ -26,15 +26,10 @@ import { RouterLink, RouterView } from 'vue-router'
 header {
   line-height: 1.5;
   max-height: 100vh;
-  /* this is we added */
   position: sticky;
   top: 0;
   z-index: 1000;
 }
-
-/* .content {
-  background-color: rgba(0, 0, 0, .3);
-} */
 
 .logo {
   display: block;

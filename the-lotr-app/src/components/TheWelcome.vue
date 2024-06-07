@@ -52,18 +52,9 @@
 </template>
 
 <style scoped>
-.gandalf-logo {
-  display: block;
-  margin: 0 auto 2rem;
-  width: 100%;
-  max-width: 125px;
-  height: auto;
-  object-fit: contain;
-}
 
 .welcome-container {
   max-width: 800px;
-  /* margin: 50px auto; */
   padding: 20px;
   background-color: #fff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
