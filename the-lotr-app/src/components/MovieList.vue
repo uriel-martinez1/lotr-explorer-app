@@ -20,18 +20,18 @@ export default {
     data() {
         return {
             movies: [],
-            tmdbMovieIds: {
-                "The Unexpected Journey": 49051,
-                "The Desolation of Smaug": 57158,
-                "The Battle of the Five Armies": 122917,
-                "The Fellowship of the Ring": 120,
-                "The Two Towers": 121,
-                "The Return of the King": 122
-            },
-            tmdbCollectionIds: {
-                "The Hobbit Series": 121938,
-                "The Lord of the Rings Series": 119
-            }
+            // tmdbMovieIds: {
+            //     "The Unexpected Journey": 49051,
+            //     "The Desolation of Smaug": 57158,
+            //     "The Battle of the Five Armies": 122917,
+            //     "The Fellowship of the Ring": 120,
+            //     "The Two Towers": 121,
+            //     "The Return of the King": 122
+            // },
+            // tmdbCollectionIds: {
+            //     "The Hobbit Series": 121938,
+            //     "The Lord of the Rings Series": 119
+            // }
         }
     },
     created() {
@@ -45,10 +45,10 @@ export default {
     }, 
     methods: {
         getTmdbMovieId(name) {
-            return this.tmdbMovieIds[name] || null;
+            return this.$store.state.tmdbMovieIds[name] || null;
         },
         getTmdbCollectionId(name) {
-            return this.tmdbCollectionIds[name] || null;
+            return this.$store.state.tmdbCollectionIds[name] || null;
         }
     }
 }
