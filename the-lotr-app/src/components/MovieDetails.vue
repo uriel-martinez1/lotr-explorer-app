@@ -9,6 +9,7 @@
 
 <script>
 import lotrService from '../services/LotrService';
+import MovieService from '@/services/MovieDBService';
 
 export default {
     data() {
@@ -47,6 +48,15 @@ export default {
             lotrService.getMovie(id)
                 .then(response => {
                     this.movie = response.data.docs[0] || {};
+                })
+                .catch(error => {
+                    console.error(error);
+                });
+        },
+        getMovieDetailsFromMovieDB(id) {
+            MovieService.getMovieDetails(id)
+                .then(response => {
+                    this.movie = response.data || {};
                 })
                 .catch(error => {
                     console.error(error);
