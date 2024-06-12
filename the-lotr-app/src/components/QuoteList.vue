@@ -1,22 +1,20 @@
 <template>
-    <div>
-        <div class="quote-content">
-            <div v-for="quote in quotes" v-bind:key="quote._id" class="quote-container">
-                <p>"{{ quote.dialog }}"</p>
-                <router-link class="character-link"
-                    v-bind:to="{ name: 'characterDetailView', params: { characterId: quote.character } }">
-                    {{ getCharacterName(quote.character) }}
-                </router-link>
-                <br>
-            </div>
+    <div class="quote-content">
+        <div v-for="quote in quotes" v-bind:key="quote._id" class="quote-container">
+            <p>"{{ quote.dialog }}"</p>
+            <router-link class="character-link"
+                v-bind:to="{ name: 'characterDetailView', params: { characterId: quote.character } }">
+                {{ getCharacterName(quote.character) }}
+            </router-link>
+            <br>
         </div>
+    </div>
 
-        <div class="pagination-controls">
-            <button @click="fetchQuotes(1)" :disabled="currentPage === 1">First</button>
-            <button @click="fetchQuotes(currentPage - 1)" :disabled="currentPage === 1">Previous</button>
-            <button @click="fetchQuotes(currentPage + 1)" :disabled="currentPage === totalPages">Next</button>
-            <button @click="fetchQuotes(totalPages)" :disabled="currentPage === totalPages">Last</button>
-        </div>
+    <div class="pagination-controls">
+        <button @click="fetchQuotes(1)" :disabled="currentPage === 1">First</button>
+        <button @click="fetchQuotes(currentPage - 1)" :disabled="currentPage === 1">Previous</button>
+        <button @click="fetchQuotes(currentPage + 1)" :disabled="currentPage === totalPages">Next</button>
+        <button @click="fetchQuotes(totalPages)" :disabled="currentPage === totalPages">Last</button>
     </div>
 </template>
 
@@ -66,7 +64,7 @@ export default {
 </script>
 
 <style scoped>
-.quote-content {
+/* .quote-content {
     background-color: rgba(0, 0, 0, 0.25);
     border-radius: 5px;
     max-width: 800px;
@@ -74,11 +72,12 @@ export default {
     border-radius: 8px;
     max-height: 80vh;
     overflow-y: auto;
-}
+} */
 
-.quote-container {
+/* .quote-container {
     margin-bottom: 10px;
-}
+    max-height: 80vh;
+} */
 
 .quote-container p {
     color: white;
